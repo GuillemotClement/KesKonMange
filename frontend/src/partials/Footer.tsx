@@ -1,17 +1,19 @@
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+
 export default function Footer() {
     return (
-        <footer>
+        <footer className="flex justify-between items-center border-t py-2 px-6">
             <div className="">
                 <p>Copyright &copy; 2024</p>
-                <p>Make by love by <a href="">Clément Guillemot</a></p>
+                <p>Make by love by <a href="" target="_blanck">Clément Guillemot</a></p>
             </div>
-            <div className="">
-                <ul>
-                    <li><a href="">Github</a></li>
-                    <li><a href="">Linkedin</a></li>
-                    <li><a href="">Instagram</a></li>
-                </ul>
-            </div>
+            <ul className="flex gap-x-2">
+                <li><a href="" target="_blanck"><FaGithub/></a></li>
+                <li><a href="" target="_blanck"><FaLinkedin/></a></li>
+                <li><a href="" target="_blanck"><FaInstagram/></a></li>
+            </ul>
         </footer>
     );
 }
